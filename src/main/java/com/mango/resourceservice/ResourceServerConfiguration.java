@@ -8,7 +8,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 
 @Configuration
 @EnableResourceServer
-//jsr250Enabled = true - pozwala na używanie adnotacji w kontrolerze, za pomocą, którch można definiować role
+//jsr250Enabled = true - pozwala na używanie adnotacji @RolesAllowed() w kontrolerze, za pomocą, którch można definiować role użytkowników
 @EnableGlobalMethodSecurity(jsr250Enabled = true)
 public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
 
